@@ -1,13 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
+
 metadata:
   name: movie-app
   namespace: argocd
+
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/KastroVKiran/k8s-multi-app.git
+    repoURL: https://github.com/rahmanuddinmd/Multi-Branch-Prod.git
     targetRevision: main
     path: k8s
 
